@@ -427,8 +427,8 @@ class SettingsCategory {
                 var tdLeft = document.createElement("TD");
                 tdLeft.innerHTML = "{{.settings.bufferSize.title}}" + ":";
                 var tdRight = document.createElement("TD");
-                var text = ["0.5 MB", "1 MB", "2 MB", "3 MB", "4 MB", "5 MB", "6 MB", "7 MB", "8 MB"];
-                var values = ["512", "1024", "2048", "3072", "4096", "5120", "6144", "7168", "8192"];
+                var text = ["16 KB", "32 KB", "64 KB", "128 KB", "256 KB", "0.5 MB", "1 MB", "2 MB", "3 MB", "4 MB", "5 MB", "6 MB", "7 MB", "8 MB"];
+                var values = ["16", "32", "64", "128", "256", "512", "1024", "2048", "3072", "4096", "5120", "6144", "7168", "8192"];
                 var select = content.createSelect(text, values, data, settingsKey);
                 select.setAttribute("onchange", "javascript: this.className = 'changed'");
                 tdRight.appendChild(select);
